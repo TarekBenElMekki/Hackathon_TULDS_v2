@@ -1,38 +1,24 @@
 {
   "name": "f1-hackathon-dashboard",
-<<<<<<< HEAD
-  "version": "0.1.70",
-=======
-  "version": "0.1.50",
->>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/increment-version.js",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "build:pwa": "next build && next export"
+    "lint": "next lint"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "framer-motion": "^12.38.0",
-    "lucide-react": "^1.8.0",
     "next": "16.2.3",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@types/socket.io-client": "^1.4.36",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "eslint": "^9",
-    "eslint-config-next": "16.2.3",
-    "next-pwa": "^5.6.0",
-    "socket.io-client": "^4.8.3",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "eslint-config-next": "16.2.3"
   }
 }
