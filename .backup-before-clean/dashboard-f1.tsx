@@ -107,10 +107,17 @@ export default function DashboardF1() {
   const clock = useMemo(() => formatClock(timeLeft), [timeLeft]);
 
   const getCarIcon = (position: number) => {
+<<<<<<< HEAD
     if (position > 90) return "ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚ÂÃƒÂ°Ã…Â¸Ã‚ÂÃ…Â½ÃƒÂ¯Ã‚Â¸Ã‚Â";
     if (position > 70) return "ÃƒÂ°Ã…Â¸Ã‚ÂÃ…Â½ÃƒÂ¯Ã‚Â¸Ã‚ÂÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â¨";
     if (position > 50) return "ÃƒÂ°Ã…Â¸Ã‚ÂÃ…Â½ÃƒÂ¯Ã‚Â¸Ã‚Â";
     return "ÃƒÂ°Ã…Â¸Ã‚ÂÃ…Â½ÃƒÂ¯Ã‚Â¸Ã‚Â";
+=======
+    if (position > 90) return "ðŸðŸŽï¸";
+    if (position > 70) return "ðŸŽï¸ðŸ’¨";
+    if (position > 50) return "ðŸŽï¸";
+    return "ðŸŽï¸";
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   };
 
   return (
@@ -258,7 +265,11 @@ export default function DashboardF1() {
           {/* Right Sidebar - Race Progress */}
           <div className="goal-tracker">
             <div className="goal-header">
+<<<<<<< HEAD
               <h3>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â RACE PROGRESS</h3>
+=======
+              <h3>ðŸ RACE PROGRESS</h3>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             </div>
             <div className="race-track">
               {teams.map((team) => {
@@ -282,19 +293,34 @@ export default function DashboardF1() {
         </div>
 
         <footer className="f1-footer">
+<<<<<<< HEAD
           <div>Ãƒâ€šÃ‚Â© 2026 F1 Hackathon Championship | Live Timing | 11 Teams</div>
           <div className="footer-message">
             <span>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â Grand Prix</span>
             <span>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  Real-time Updates</span>
             <span>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¯ Live Positions</span>
+=======
+          <div>Â© 2026 F1 Hackathon Championship | Live Timing | 11 Teams</div>
+          <div className="footer-message">
+            <span>ðŸ Grand Prix</span>
+            <span>ðŸ“Š Real-time Updates</span>
+            <span>ðŸŽ¯ Live Positions</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
         </footer>
       </div>
 
       <button className="admin-button" onClick={() => router.push("/admin")}>
+<<<<<<< HEAD
         ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â® RACE CONTROL
+=======
+        ðŸŽ® RACE CONTROL
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
       </button>
     </div>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

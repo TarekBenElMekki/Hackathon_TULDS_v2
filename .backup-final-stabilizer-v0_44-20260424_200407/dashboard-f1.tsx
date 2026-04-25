@@ -312,7 +312,11 @@ export default function DashboardF1() {
 
   const timeText = now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
   const dateText = now.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
+<<<<<<< HEAD
   const rangeText = payload?.requested?.startDate && payload?.requested?.endDate ? `${payload.requested.startDate} ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ ${payload.requested.endDate}` : "Live range";
+=======
+  const rangeText = payload?.requested?.startDate && payload?.requested?.endDate ? `${payload.requested.startDate} Ã¢â€ â€™ ${payload.requested.endDate}` : "Live range";
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
   return (
     <main className="sketch-race-page">
@@ -324,7 +328,11 @@ export default function DashboardF1() {
           <div className="sketch-brand">
             <div className="sketch-kicker">AIESEC FORMULA ANALYTICS</div>
             <h1>Race Control Dashboard</h1>
+<<<<<<< HEAD
             <p>Symmetric F1 broadcast layout ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· no-scroll tables ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· approval performance</p>
+=======
+            <p>Symmetric F1 broadcast layout Ã‚Â· no-scroll tables Ã‚Â· approval performance</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
           <div className="sketch-header-metrics">
             <div className="sketch-metric"><span>Applied</span><strong>{globalApplied}</strong></div>
@@ -339,14 +347,22 @@ export default function DashboardF1() {
           </div>
         </header>
 
+<<<<<<< HEAD
         {error ? <div className="sketch-alert"><WifiOff size={14} /> {error} ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· showing safe local fallback if needed</div> : null}
+=======
+        {error ? <div className="sketch-alert"><WifiOff size={14} /> {error} Ã‚Â· showing safe local fallback if needed</div> : null}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
         <section className="sketch-main-grid">
           <section className="sketch-card sketch-global-card">
             <div className="sketch-card-head">
               <div>
                 <h2>Global Approval Table</h2>
+<<<<<<< HEAD
                 <p>{loading ? "Loading live data..." : `Top ${Math.min(rows.length, 12)} entities ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· ${rangeText}`}</p>
+=======
+                <p>{loading ? "Loading live data..." : `Top ${Math.min(rows.length, 12)} entities Ã‚Â· ${rangeText}`}</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               </div>
               <div className="sketch-live-pill">{error ? <WifiOff size={13} /> : <Wifi size={13} />} LIVE</div>
             </div>
@@ -365,10 +381,18 @@ export default function DashboardF1() {
         <footer className="sketch-news-bar">
           <div className="sketch-news-label"><Radio size={14} /> NEWS BAR</div>
           <div className="sketch-news-track">
+<<<<<<< HEAD
             <span>ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â Race Control live ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Global approvals {globalApproved} ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Realizations {globalRealized} ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Leader {rows[0]?.shortLabel ?? "N/A"} with {rows[0]?.approvedTotal ?? 0} approvals ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Track map updated every refresh ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Product approval tables are compact and no-scroll ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·</span>
+=======
+            <span>Ã°Å¸ÂÂ Race Control live Ã‚Â· Global approvals {globalApproved} Ã‚Â· Realizations {globalRealized} Ã‚Â· Leader {rows[0]?.shortLabel ?? "N/A"} with {rows[0]?.approvedTotal ?? 0} approvals Ã‚Â· Track map updated every refresh Ã‚Â· Product approval tables are compact and no-scroll Ã‚Â·</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
         </footer>
       </div>
     </main>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

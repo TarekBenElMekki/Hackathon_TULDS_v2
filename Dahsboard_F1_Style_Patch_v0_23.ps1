@@ -900,8 +900,13 @@ export default function DashboardF1() {
     if (leaderboard.length === 0) return control.tickerMessage;
     const ranked = leaderboard
       .map((row, idx) => `${idx + 1}. ${trimLabel(row.rowLabel)} ${row.approvedTotal}`)
+<<<<<<< HEAD
       .join("   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢   ");
     return `${control.tickerMessage}   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢   ${ranked}`;
+=======
+      .join("   â€¢   ");
+    return `${control.tickerMessage}   â€¢   ${ranked}`;
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   }, [leaderboard, control.tickerMessage]);
 
   const clockText = useMemo(() => {
@@ -1122,7 +1127,11 @@ export default function DashboardF1() {
                   left: `${entry.pos.x}%`,
                   top: `${entry.pos.y}%`
                 }}
+<<<<<<< HEAD
                 title={`${entry.label} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ${entry.score}`}
+=======
+                title={`${entry.label} â€” ${entry.score}`}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               >
                 <div className="tunisia-node-rank">{idx + 1}</div>
                 <div className="tunisia-node-dot" />
@@ -1424,4 +1433,7 @@ Write-Host "Next:" -ForegroundColor Yellow
 Write-Host "  npm run dev" -ForegroundColor White
 Write-Host "  Open /admin/api and paste token" -ForegroundColor White
 Write-Host "  Refresh /" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

@@ -165,7 +165,11 @@ display:"inline-block",
 paddingLeft:"100%",
 animation:"scroll 20s linear infinite"
 }}>
+<<<<<<< HEAD
 {leaderboard.map((r:any,i:number)=>`${i+1}. ${r.name} ${r.total}`).join("   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢   ")}
+=======
+{leaderboard.map((r:any,i:number)=>`${i+1}. ${r.name} ${r.total}`).join("   â€¢   ")}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 </div>
 </div>
 
@@ -193,4 +197,7 @@ Write-Host "npm run dev"
 Write-Host ""
 Write-Host "OPEN:" -ForegroundColor Yellow
 Write-Host "http://localhost:3000"
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

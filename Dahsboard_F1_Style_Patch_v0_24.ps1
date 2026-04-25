@@ -333,7 +333,11 @@ export default function DashboardF1() {
           </div>
           <div className="timing-footer-center">
             {payload?.requested?.startDate && payload?.requested?.endDate
+<<<<<<< HEAD
               ? `${payload.requested.startDate} ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ ${payload.requested.endDate}`
+=======
+              ? `${payload.requested.startDate} â†’ ${payload.requested.endDate}`
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               : "LIVE BROADCAST BOARD"}
           </div>
           <div className="timing-footer-right">
@@ -781,4 +785,7 @@ Write-Host "  - Makes the global table look like a broadcast timing board" -Fore
 Write-Host "  - Makes the 6 side tables use the same visual language" -ForegroundColor White
 Write-Host "  - Uses your existing /api/aiesec-analytics and /api/scores data" -ForegroundColor White
 Write-Host ""
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

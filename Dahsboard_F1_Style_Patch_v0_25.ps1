@@ -240,7 +240,11 @@ function TunisiaFlagBadge() {
       <span className="tunisia-flag-white">
         <span className="tunisia-flag-red-circle">
           <span className="tunisia-flag-crescent"></span>
+<<<<<<< HEAD
           <span className="tunisia-flag-star">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</span>
+=======
+          <span className="tunisia-flag-star">â˜…</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </span>
       </span>
     </div>
@@ -437,8 +441,13 @@ export default function DashboardF1() {
   const leader = towerRows[0];
   const fastestLap = leader ? "1:22.3" + String((leader.rank + 4) % 10) : "--:--.---";
   const pitWindow = leader ? "LAP " + Math.max(1, lap - 8) + " - " + Math.min(raceLaps, lap + 6) : "OPEN";
+<<<<<<< HEAD
   const weather = "AIR 26Ãƒâ€šÃ‚Â°C";
   const trackTemp = "TRACK 34Ãƒâ€šÃ‚Â°C";
+=======
+  const weather = "AIR 26Â°C";
+  const trackTemp = "TRACK 34Â°C";
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   const flagStatus = offline ? "VSC" : "GREEN";
   const raceControl = offline ? "SIGNAL CHECK" : "CLEAR";
   const drs = lap > 2 ? "ENABLED" : "DISABLED";
@@ -462,7 +471,11 @@ export default function DashboardF1() {
             <div className="tv-title-row">
               <div className="tv-page-title">TUNISIA HACKATHON GRAND PRIX</div>
               <div className="tv-page-subtitle">
+<<<<<<< HEAD
                 LIVE TIMING ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ RACE CONTROL ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ SECTOR WINDOW ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ TYRE STRATEGY ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ TRACK MAP
+=======
+                LIVE TIMING â€¢ RACE CONTROL â€¢ SECTOR WINDOW â€¢ TYRE STRATEGY â€¢ TRACK MAP
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               </div>
             </div>
           </div>
@@ -511,7 +524,11 @@ export default function DashboardF1() {
           </div>
           <div className="tv-footer-center">
             {payload?.requested?.startDate && payload?.requested?.endDate
+<<<<<<< HEAD
               ? `${payload.requested.startDate} ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ ${payload.requested.endDate}`
+=======
+              ? `${payload.requested.startDate} â†’ ${payload.requested.endDate}`
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               : "BROADCAST TIMING FEED"}
           </div>
           <div className="tv-footer-right">{ranked.length} ENTRIES</div>
@@ -1357,4 +1374,7 @@ Write-Host "  npm run dev" -ForegroundColor White
 Write-Host ""
 Write-Host "Then refresh the home page." -ForegroundColor Yellow
 Write-Host ""
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

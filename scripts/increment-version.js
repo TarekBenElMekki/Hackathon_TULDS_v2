@@ -19,5 +19,9 @@ packageJson.version = `${major}.${minor}.${patch}`;
 // Write back to package.json
 fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 2));
 
+<<<<<<< HEAD
 console.log(`ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Version incremented to: ${packageJson.version}`);
 
+=======
+console.log(`âœ… Version incremented to: ${packageJson.version}`);
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

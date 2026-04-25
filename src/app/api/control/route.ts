@@ -39,4 +39,7 @@ export async function POST(request: NextRequest) {
  fs.writeFileSync(filePath, JSON.stringify(next, null, 2), "utf-8");
  return NextResponse.json({ ok: true, data: next });
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

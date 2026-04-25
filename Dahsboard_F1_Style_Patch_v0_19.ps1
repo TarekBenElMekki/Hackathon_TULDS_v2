@@ -252,9 +252,15 @@ export default function DashboardF1() {
     const ranked = leaderboard
       .slice(0, MAIN_ROWS)
       .map((row, idx) => `${idx + 1}. ${trimLabel(row.rowLabel)} ${row.approvedTotal}`)
+<<<<<<< HEAD
       .join("   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢   ");
 
     return `${settings.tickerMessage}   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢   ${ranked}`;
+=======
+      .join("   â€¢   ");
+
+    return `${settings.tickerMessage}   â€¢   ${ranked}`;
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   }, [leaderboard, settings]);
 
   const clockText = useMemo(() => {
@@ -461,7 +467,11 @@ export default function DashboardF1() {
                 key={`car-${entry.id}`}
                 className="car-chip"
                 style={{ left: `${6 + idx * 12.5}%` }}
+<<<<<<< HEAD
                 title={`${entry.label} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ${entry.score}`}
+=======
+                title={`${entry.label} â€” ${entry.score}`}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               >
                 <div className="car-body" />
                 <div className="car-label">{idx + 1}</div>
@@ -916,4 +926,7 @@ Write-Host ""
 Write-Host "Next:" -ForegroundColor Yellow
 Write-Host "  npm run dev" -ForegroundColor White
 Write-Host "  Refresh /" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

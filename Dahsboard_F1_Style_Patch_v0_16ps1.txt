@@ -405,4 +405,7 @@ Write-Host "  - no vertical page scroll" -ForegroundColor White
 Write-Host "  - no horizontal page scroll" -ForegroundColor White
 Write-Host "  - tighter tables and lower panels" -ForegroundColor White
 Write-Host "  - compact broadcast fit for projection" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

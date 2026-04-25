@@ -53,7 +53,13 @@ Write-Host "ENV SETUP COMPLETE" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
 Write-Host ""
 Write-Host "IMPORTANT:" -ForegroundColor Yellow
+<<<<<<< HEAD
 Write-Host "ÃƒÂ°Ã…Â¸Ã¢â‚¬ËœÃ¢â‚¬Â° Restart your dev server after this:" -ForegroundColor White
 Write-Host "   npm run dev" -ForegroundColor White
 Write-Host ""
 
+=======
+Write-Host "ðŸ‘‰ Restart your dev server after this:" -ForegroundColor White
+Write-Host "   npm run dev" -ForegroundColor White
+Write-Host ""
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

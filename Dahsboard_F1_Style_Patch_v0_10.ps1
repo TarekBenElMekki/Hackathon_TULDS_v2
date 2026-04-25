@@ -229,7 +229,11 @@ export default function DashboardF1() {
               </div>
               <div className="analytics-board-meta">
                 {payload?.requested
+<<<<<<< HEAD
                   ? `${payload.requested.startDate} ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ ${payload.requested.endDate}`
+=======
+                  ? `${payload.requested.startDate} â†’ ${payload.requested.endDate}`
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
                   : "Loading range..."}
               </div>
             </div>
@@ -703,4 +707,7 @@ Write-Host "  - 1 big global ranking board" -ForegroundColor White
 Write-Host "  - 6 programme approved boards" -ForegroundColor White
 Write-Host "  - Ranked by approved_total" -ForegroundColor White
 Write-Host "  - O boards appear before I boards for each programme" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

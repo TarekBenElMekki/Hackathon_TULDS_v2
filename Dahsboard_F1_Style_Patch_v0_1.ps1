@@ -1066,4 +1066,7 @@ Write-Host ""
 Write-Host "Server route:" -ForegroundColor Yellow
 Write-Host "  /api/aiesec-analytics?officeId=1559&startDate=2025-02-01&endDate=2025-02-28" -ForegroundColor White
 Write-Host ""
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

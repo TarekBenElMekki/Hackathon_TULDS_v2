@@ -54,7 +54,11 @@ function ProductTable({ config, rows }: { config: ProductBoard; rows: BoardRow[]
       <div className="sketch-card-head sketch-mini-head">
         <div>
           <h3>{config.title}</h3>
+<<<<<<< HEAD
           <p>{config.subtitle} Ã‚Â· 1Ã¢â‚¬â€œ12 loop</p>
+=======
+          <p>{config.subtitle} · 1–12 loop</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </div>
         <span className="sketch-product-tag">APPROVAL</span>
       </div>
@@ -348,4 +352,7 @@ Write-Host ""
 Write-Ok "Done. Global Approval Table = top 12. Product tables = auto vertical carousel 1 to 12."
 Write-Host "Run:" -ForegroundColor White
 Write-Host "  powershell -ExecutionPolicy Bypass -File .\Dashboard_F1_Global12_ProductCarousel_v0_49.ps1 -RunBuild" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

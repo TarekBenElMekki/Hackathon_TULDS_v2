@@ -21,7 +21,11 @@ function Decode-MojibakeText {
   param([Parameter(Mandatory=$true)][string]$Text)
 
   $s = $Text
+<<<<<<< HEAD
   $markers = @("ÃƒÆ’", "Ãƒâ€š", "ÃƒÂ¢Ã¢â€šÂ¬", "ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢", "ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ", "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â", "ÃƒÂ°Ã…Â¸", "Ã¯Â¿Â½")
+=======
+  $markers = @("Ã", "Â", "â€", "â€™", "â€œ", "â€", "ðŸ", "�")
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   $cp1252 = [System.Text.Encoding]::GetEncoding(1252)
   $utf8 = New-Object System.Text.UTF8Encoding($false, $false)
 
@@ -37,8 +41,13 @@ function Decode-MojibakeText {
       $decoded = $utf8.GetString($bytes)
 
       # Only accept the pass if it does not grow replacement characters.
+<<<<<<< HEAD
       $oldBad = ([regex]::Matches($s, "Ã¯Â¿Â½")).Count
       $newBad = ([regex]::Matches($decoded, "Ã¯Â¿Â½")).Count
+=======
+      $oldBad = ([regex]::Matches($s, "�")).Count
+      $newBad = ([regex]::Matches($decoded, "�")).Count
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
       if ($newBad -le ($oldBad + 2) -and $decoded -ne $s) {
         $s = $decoded
       } else {
@@ -50,6 +59,7 @@ function Decode-MojibakeText {
   }
 
   # Targeted cleanups for common text fragments seen on the dashboard.
+<<<<<<< HEAD
   $s = $s -replace "Ãƒâ€šÃ‚Â·", "Ã‚Â·"
   $s = $s -replace "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·", "Ã‚Â·"
   $s = $s -replace "ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·", "Ã‚Â·"
@@ -57,6 +67,15 @@ function Decode-MojibakeText {
   $s = $s -replace "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢", "Ã¢â‚¬Â¢"
   $s = $s -replace "Ãƒâ€šÃ‚Â©", "Ã‚Â©"
   $s = $s -replace "Ãƒâ€š", ""
+=======
+  $s = $s -replace "Â·", "·"
+  $s = $s -replace "Ã‚Â·", "·"
+  $s = $s -replace "Ãƒâ€šÃ‚Â·", "·"
+  $s = $s -replace "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·", "·"
+  $s = $s -replace "â€¢", "•"
+  $s = $s -replace "Â©", "©"
+  $s = $s -replace "Â", ""
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   return $s
 }
 
@@ -89,7 +108,11 @@ $sourceFiles = Get-ChildItem -Path $root -Recurse -File -Include $sourcePatterns
 $cleanedCount = 0
 foreach ($file in $sourceFiles) {
   $raw = [System.IO.File]::ReadAllText($file.FullName)
+<<<<<<< HEAD
   if ($raw -match "ÃƒÆ’|Ãƒâ€š|ÃƒÂ¢Ã¢â€šÂ¬|ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢|ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ|ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â|ÃƒÂ°Ã…Â¸") {
+=======
+  if ($raw -match "Ã|Â|â€|â€™|â€œ|â€|ðŸ") {
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
     $fixed = Decode-MojibakeText $raw
     if ($fixed -ne $raw) {
       Write-Utf8NoBomFile -Path $file.FullName -Content $fixed
@@ -121,7 +144,11 @@ function ProductTable({ config, rows }: { config: ProductBoard; rows: BoardRow[]
       <div className="sketch-card-head sketch-mini-head">
         <div>
           <h3>{config.title}</h3>
+<<<<<<< HEAD
           <p>{`Top ${Math.min(ranked.length, 12)} Ã‚Â· ${config.subtitle}`}</p>
+=======
+          <p>{`Top ${Math.min(ranked.length, 12)} · ${config.subtitle}`}</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </div>
         <span className="sketch-product-tag">TOP 12</span>
       </div>
@@ -169,10 +196,17 @@ if ([regex]::IsMatch($tsx, $productTablePattern)) {
 }
 
 # Fix visible labels and separators in dashboard text.
+<<<<<<< HEAD
 $tsx = $tsx -replace 'Symmetric F1 broadcast layout\s*.*?\s*no-scroll tables\s*.*?\s*approval performance', 'Symmetric F1 broadcast layout Ã‚Â· no-scroll tables Ã‚Â· approval performance'
 $tsx = $tsx -replace '\{error\}.*?showing safe local fallback if needed', '{error} Ã‚Â· showing safe local fallback if needed'
 $tsx = $tsx -replace 'Top \$\{Math\.min\(rows\.length,\s*12\)\} entities.*?\$\{rangeText\}', 'Top ${Math.min(rows.length, 12)} entities Ã‚Â· ${rangeText}'
 $tsx = $tsx -replace 'Top \$\{Math\.min\(rows\.length,\s*7\)\} entities.*?\$\{rangeText\}', 'Top ${Math.min(rows.length, 12)} entities Ã‚Â· ${rangeText}'
+=======
+$tsx = $tsx -replace 'Symmetric F1 broadcast layout\s*.*?\s*no-scroll tables\s*.*?\s*approval performance', 'Symmetric F1 broadcast layout · no-scroll tables · approval performance'
+$tsx = $tsx -replace '\{error\}.*?showing safe local fallback if needed', '{error} · showing safe local fallback if needed'
+$tsx = $tsx -replace 'Top \$\{Math\.min\(rows\.length,\s*12\)\} entities.*?\$\{rangeText\}', 'Top ${Math.min(rows.length, 12)} entities · ${rangeText}'
+$tsx = $tsx -replace 'Top \$\{Math\.min\(rows\.length,\s*7\)\} entities.*?\$\{rangeText\}', 'Top ${Math.min(rows.length, 12)} entities · ${rangeText}'
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
 # Remove any older appliedRankingText definition to avoid duplicate const declarations.
 $tsx = [regex]::Replace($tsx, '(?s)\s*const appliedRankingText = useMemo\(\(\) => \{.*?\}, \[rows\]\);\s*', "`r`n", 1)
@@ -185,7 +219,11 @@ $appliedMemo = @'
       .sort((a, b) => b.appliedTotal - a.appliedTotal || b.approvedTotal - a.approvedTotal || a.shortLabel.localeCompare(b.shortLabel))
       .slice(0, 12);
 
+<<<<<<< HEAD
     return ranked.map((row, index) => `${row.shortLabel}: ${index + 1}`).join(" Ã‚Â· ");
+=======
+    return ranked.map((row, index) => `${row.shortLabel}: ${index + 1}`).join(" · ");
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   }, [rows]);
 
 '@
@@ -202,7 +240,11 @@ $footerReplacement = @'
 <footer className="sketch-news-bar">
           <div className="sketch-news-label"><Radio size={14} /> APPLIED</div>
           <div className="sketch-news-track">
+<<<<<<< HEAD
             <span>{`Applied values ranking Ã‚Â· ${appliedRankingText} Ã‚Â·`}</span>
+=======
+            <span>{`Applied values ranking · ${appliedRankingText} ·`}</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
         </footer>
 '@
@@ -491,4 +533,7 @@ Write-Host ""
 Write-Host "Backup: $backupDir" -ForegroundColor DarkGray
 Write-Host "Run:" -ForegroundColor White
 Write-Host "  powershell -ExecutionPolicy Bypass -File .\Dashboard_F1_Final_TableSize_Mojibake_Fix_v0_51.ps1 -RunBuild" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

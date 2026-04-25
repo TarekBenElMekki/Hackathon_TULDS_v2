@@ -1,6 +1,10 @@
 {
   "name": "f1-hackathon-dashboard",
+<<<<<<< HEAD
   "version": "0.1.70",
+=======
+  "version": "0.1.50",
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,8 +1,17 @@
 {
+<<<<<<< HEAD
   "token": "s0rgcJcA6JtdGKATYGdXcdb_y2f80T1bmt2hzfY1BWo",
   "goal": 500,
   "tickerMessage": "LIVE APPROVALS BROADCAST",
   "officeId": "1559",
   "startDate": "2026-04-24",
   "endDate": "2026-04-25"
+=======
+ "token": "twzW7ZTA5GbZTOWIYaOWaSVQTdRmYM0bMj1pa_uLuY4",
+ "goal": 500,
+ "tickerMessage": "LIVE APPROVALS BROADCAST",
+ "officeId": "1559",
+ "startDate": "2026-04-24",
+ "endDate": "2026-04-25"
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 }

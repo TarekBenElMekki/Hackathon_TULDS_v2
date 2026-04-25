@@ -63,7 +63,11 @@ function ProductTable({ config, rows }: { config: ProductBoard; rows: BoardRow[]
       <div className="sketch-card-head sketch-mini-head">
         <div>
           <h3>{config.title}</h3>
+<<<<<<< HEAD
           <p>Top {Math.min(topRows.length, 12)} Ã‚Â· {config.subtitle}</p>
+=======
+          <p>Top {Math.min(topRows.length, 12)} · {config.subtitle}</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </div>
         <div className="sketch-product-tag">TOP 12</div>
       </div>
@@ -119,7 +123,11 @@ $appliedMemo = @'
       )
       .slice(0, 12)
       .map((row, index) => `${row.shortLabel}: ${index + 1}`)
+<<<<<<< HEAD
       .join(" Ã‚Â· ");
+=======
+      .join(" · ");
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   }, [rows]);
 
 '@
@@ -141,7 +149,11 @@ $footerReplacement = @'
 <footer className="sketch-news-bar sketch-applied-news-bar">
           <div className="sketch-news-label"><Radio size={14} /> APPLIED</div>
           <div className="sketch-news-track">
+<<<<<<< HEAD
             <span>Ã°Å¸ÂÂ Applied values ranking Ã‚Â· {appliedRanking || "No applied ranking yet"} Ã‚Â·</span>
+=======
+            <span>🏁 Applied values ranking · {appliedRanking || "No applied ranking yet"} ·</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
         </footer>
 '@
@@ -329,4 +341,7 @@ if ($RunBuild) {
 
 Write-Host ""
 Write-Ok "v0_50 applied: solid headers, Global TOP 12, product TOP 12 carousel, Applied ranking footer."
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

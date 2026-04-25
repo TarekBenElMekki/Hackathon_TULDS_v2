@@ -173,4 +173,7 @@ Write-Host "  npm run dev" -ForegroundColor White
 Write-Host ""
 Write-Host "Then open:" -ForegroundColor Yellow
 Write-Host "  /admin/api" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

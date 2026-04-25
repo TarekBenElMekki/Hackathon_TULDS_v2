@@ -4669,6 +4669,93 @@ body {
 }
 
 /* =========================================================
+<<<<<<< HEAD
+=======
+ HEADER CENTER GIF PATCH v0_39
+ Keeps GIF centered and fitted inside the actual header height.
+ END HEADER CENTER GIF PATCH
+ ========================================================= */
+
+.sketch-header,
+.tv-header,
+.timing-topbar,
+.f1-header,
+.analytics-race-header {
+ position: relative !important;
+ overflow: hidden !important;
+}
+
+.header-gif-center {
+ position: absolute !important;
+ left: 50% !important;
+ top: 50% !important;
+ transform: translate(-50%, -50%) !important;
+ height: calc(100% - 12px) !important;
+ width: min(34vw, 520px) !important;
+ max-width: 42% !important;
+ display: flex !important;
+ align-items: center !important;
+ justify-content: center !important;
+ pointer-events: none !important;
+ z-index: 2 !important;
+ opacity: 1 !important;
+}
+
+.header-gif-center::before {
+ content: "";
+ position: absolute;
+ inset: -8px -18px;
+ border-radius: 999px;
+ background:
+ radial-gradient(circle at center, rgba(225, 6, 0, 0.14), transparent 62%),
+ linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+ filter: blur(4px);
+ z-index: -1;
+}
+
+.header-gif-center img {
+ display: block !important;
+ width: 100% !important;
+ height: 100% !important;
+ max-width: 100% !important;
+ max-height: 100% !important;
+ object-fit: contain !important;
+ object-position: center center !important;
+}
+
+/* Keep header content above background, but below the GIF when needed */
+.sketch-header > *:not(.header-gif-center),
+.tv-header > *:not(.header-gif-center),
+.timing-topbar > *:not(.header-gif-center),
+.f1-header > *:not(.header-gif-center),
+.analytics-race-header > *:not(.header-gif-center) {
+ position: relative;
+ z-index: 3;
+}
+
+/* In the sketch layout, leave a visual lane in the center so the GIF is not hidden by controls. */
+.sketch-header .header-gif-center {
+ width: min(30vw, 470px) !important;
+ max-width: 36% !important;
+}
+
+@media (max-width: 1400px) {
+ .header-gif-center {
+ width: min(28vw, 390px) !important;
+ max-width: 34% !important;
+ height: calc(100% - 10px) !important;
+ }
+}
+
+@media (max-width: 900px) {
+ .header-gif-center {
+ opacity: 0.45 !important;
+ width: 40vw !important;
+ max-width: 40vw !important;
+ }
+}
+/* =========================================================
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
  BLURRED GIF CARD BACKGROUND TEST v0_40
  Applies the GIF inside dashboard cards, keeps Global Approval Table unchanged.
  ========================================================= */
@@ -5681,6 +5768,7 @@ body {
 .sketch-news-track { overflow: hidden !important; white-space: nowrap !important; color: #ffffff !important; font-size: 13px !important; font-weight: 850 !important; }
 .sketch-news-track span { display: inline-block !important; padding-left: 100% !important; animation: sketchTicker 28s linear infinite !important; }
 @media (max-width: 1350px) { .sketch-table td { height: 22px !important; font-size: 9px !important; } .sketch-global-table td { height: 23px !important; font-size: 9.5px !important; } .sketch-mini-table td { height: 22px !important; font-size: 8.8px !important; } }
+<<<<<<< HEAD
 /* === FINAL SAFE TABLE AND TEXT FIX v0_52 END === */
 /* =========================================================
    REMOVE HEADER MIDDLE GIF v0_53
@@ -7048,3 +7136,6 @@ body {
   font-weight: 800 !important;
 }
 /* === FORCE PODIUM VISIBLE V02 END === */
+=======
+/* === FINAL SAFE TABLE AND TEXT FIX v0_52 END === */
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

@@ -189,4 +189,7 @@ Write-Host "HEADER GIF PATCH V0_38 DONE" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
 Write-Host "GIF URL: /f1-header-gif.gif" -ForegroundColor White
 Write-Host "Backups: $backupDir" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

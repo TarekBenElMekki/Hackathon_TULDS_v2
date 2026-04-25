@@ -155,4 +155,7 @@ if ($RunBuild) {
 }
 
 Write-Ok "Done. Cards now use a blurred fitted GIF background; Global Approval Table is unchanged."
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

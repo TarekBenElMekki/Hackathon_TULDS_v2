@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;600;700;800;900&display=swap');
+=======
+﻿@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;600;700;800;900&display=swap');
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
 :root {
   --bg-0: #060914;
@@ -5373,4 +5377,8 @@ body {
 .sketch-podium-item .sketch-lc-name {
   position: relative;
   right: 10px; /* pulls text slightly left */
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

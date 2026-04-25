@@ -1,18 +1,29 @@
 =========================================
 CONTEXT TRANSFER
 =========================================
+<<<<<<< HEAD
 Generated: 2026-04-25 06:24:10
 Project root: C:\Users\tarek\Downloads\f1-hackathon-dashboard_v2_RECREATED
+=======
+Generated: 2026-04-24 20:19:15
+Project root: C:\Users\tarek\Downloads\f1-hackathon-dashboard_v2
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
 Use this bundle to continue work in another conversation or environment.
 
 SUMMARY
+<<<<<<< HEAD
 - Total directories exported: 47
 - Total files exported: 164
+=======
+- Total directories exported: 25
+- Total files exported: 105
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 - Hidden export folder: .project-export
 
 TOP-LEVEL DIRECTORIES
 - .backup-before-clean
+<<<<<<< HEAD
 - .backup-bullaregia-exclude-virtual-global12-v0_69-20260425_055336
 - .backup-card-gif-v0_40-20260424_195100
 - .backup-final-safe-v0_52-20260424_203526
@@ -29,11 +40,19 @@ TOP-LEVEL DIRECTORIES
 - .backup-header-gif-v0_38-20260424_194451
 - .backup-header-gif-v0_39-20260424_194547
 - .backup-newsbar-applicants-matched-anaccepted-v0_70-20260425_055407
+=======
+- .backup-card-gif-v0_40-20260424_195100
+- .backup-final-stabilizer-v0_44-20260424_200407
+- .backup-global-top12-v0_48-20260424_201745
+- .backup-header-gif-v0_38-20260424_194451
+- .backup-header-gif-v0_39-20260424_194547
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 - .backup-podium-p2-gif-v0_41-20260424_195357
 - .backup-podium-p2-gif-v0_43-20260424_195733
 - .backup-podium-restore-wheels-v0_46-20260424_201046
 - .backup-podium-split-gif-v0_45-20260424_200723
 - .backup-podium-swap-v0_47-20260424_201325
+<<<<<<< HEAD
 - .backup-real-api-all-tables-v0_61-20260425_054709
 - .backup-real-api-all-tables-v0_63-20260425_054805
 - .backup-remove-header-middle-gif-v0_53-20260425_042355
@@ -46,6 +65,9 @@ TOP-LEVEL DIRECTORIES
 - .backup-solid-table-headers-no-bleed-v0_55-20260425_054222
 - .backup-table-row-size-visible-scroll-v0_57-20260425_054435
 - .backup-tunisia-trackmap-start-arrival-v0_56-20260425_054254
+=======
+- .backup-sketch-layout-v0_36-20260424_134806
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 - .project-export
 - public
 - scripts
@@ -89,6 +111,7 @@ TOP-LEVEL FILES
 - Dahsboard_F1_Style_Patch_v0_7.ps1
 - Dahsboard_F1_Style_Patch_v0_8.ps1
 - Dahsboard_F1_Style_Patch_v0_9.ps1
+<<<<<<< HEAD
 - Dashboard_F1_Add_BullaRegia_ExcludeVirtual_Global12_v0_69.ps1
 - Dashboard_F1_Blurred_GIF_Cards_Test_v0_40.ps1
 - Dashboard_F1_Final_Safe_Table_Text_Fix_v0_52.ps1
@@ -125,6 +148,21 @@ TOP-LEVEL FILES
 - Dashboard_F1_SolidHeaders_Top12_AppliedTicker_v0_50.ps1
 - Dashboard_F1_Table_RowSize_VisibleRows_Scroll_v0_57.ps1
 - Dashboard_F1_Tunisia_TrackMap_Start_Arrival_v0_56.ps1
+=======
+- Dashboard_F1_Blurred_GIF_Cards_Test_v0_40.ps1
+- Dashboard_F1_Final_Stabilizer_NoErrors_v0_44.ps1
+- Dashboard_F1_Force_Podium_P2_GIF_Blur_v0_42.ps1
+- Dashboard_F1_Force_Podium_P2_GIF_Blur_v0_43.ps1
+- Dashboard_F1_GlobalTable_Top12_NoResize_v0_48.ps1
+- Dashboard_F1_Header_GIF_Center_v0_37.ps1
+- Dashboard_F1_Header_GIF_Center_v0_38.ps1
+- Dashboard_F1_Header_GIF_Center_v0_39.ps1
+- Dashboard_F1_Podium_Card_Split_GIF_v0_45.ps1
+- Dashboard_F1_Podium_P2_GIF_Blur_v0_41.ps1
+- Dashboard_F1_Podium_Swap_Name_Place_v0_47.ps1
+- Dashboard_F1_Restore_Podium_Wheels_v0_46.ps1
+- Dashboard_F1_Sketch_Layout_NoScroll_v0_36.ps1
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 - eslint.config.mjs
 - Full_Project_Bundle_Generator.ps1
 - next.config.ts
@@ -135,6 +173,10 @@ TOP-LEVEL FILES
 - README.md
 - Sans titre.txt
 - tsconfig.json
+<<<<<<< HEAD
+=======
+- tsconfig.tsbuildinfo
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
 BUNDLE CONTENTS
 - PROJECT_STRUCTURE.txt -> directory and file map

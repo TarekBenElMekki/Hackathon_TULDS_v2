@@ -158,4 +158,7 @@ if ($RunBuild) {
 } else {
   Info "Patch finished. Run npm run build or rerun with -RunBuild."
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

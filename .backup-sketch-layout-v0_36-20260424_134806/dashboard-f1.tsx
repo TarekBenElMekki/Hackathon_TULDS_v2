@@ -201,7 +201,11 @@ function TunisiaFlagBadge() {
       <span className="tunisia-flag-white">
         <span className="tunisia-flag-red-circle">
           <span className="tunisia-flag-crescent"></span>
+<<<<<<< HEAD
           <span className="tunisia-flag-star">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦</span>
+=======
+          <span className="tunisia-flag-star">Ã¢Ëœâ€¦</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </span>
       </span>
     </div>
@@ -398,8 +402,13 @@ export default function DashboardF1() {
   const leader = towerRows[0];
   const fastestLap = leader ? "1:22.3" + String((leader.rank + 4) % 10) : "--:--.---";
   const pitWindow = leader ? "LAP " + Math.max(1, lap - 8) + " - " + Math.min(raceLaps, lap + 6) : "OPEN";
+<<<<<<< HEAD
   const weather = "AIR 26ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C";
   const trackTemp = "TRACK 34ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C";
+=======
+  const weather = "AIR 26Ã‚Â°C";
+  const trackTemp = "TRACK 34Ã‚Â°C";
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   const flagStatus = offline ? "VSC" : "GREEN";
   const raceControl = offline ? "SIGNAL CHECK" : "CLEAR";
   const drs = lap > 2 ? "ENABLED" : "DISABLED";
@@ -423,7 +432,11 @@ export default function DashboardF1() {
             <div className="tv-title-row">
               <div className="tv-page-title">TUNISIA HACKATHON GRAND PRIX</div>
               <div className="tv-page-subtitle">
+<<<<<<< HEAD
                 LIVE TIMING ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ RACE CONTROL ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ SECTOR WINDOW ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ TYRE STRATEGY ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ TRACK MAP
+=======
+                LIVE TIMING Ã¢â‚¬Â¢ RACE CONTROL Ã¢â‚¬Â¢ SECTOR WINDOW Ã¢â‚¬Â¢ TYRE STRATEGY Ã¢â‚¬Â¢ TRACK MAP
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               </div>
             </div>
           </div>
@@ -472,7 +485,11 @@ export default function DashboardF1() {
           </div>
           <div className="tv-footer-center">
             {payload?.requested?.startDate && payload?.requested?.endDate
+<<<<<<< HEAD
               ? `${payload.requested.startDate} ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ ${payload.requested.endDate}`
+=======
+              ? `${payload.requested.startDate} Ã¢â€ â€™ ${payload.requested.endDate}`
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               : "BROADCAST TIMING FEED"}
           </div>
           <div className="tv-footer-right">{ranked.length} ENTRIES</div>
@@ -481,4 +498,7 @@ export default function DashboardF1() {
     </div>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

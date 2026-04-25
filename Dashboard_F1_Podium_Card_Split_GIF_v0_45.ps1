@@ -213,4 +213,7 @@ if ($RunBuild) {
   if ($LASTEXITCODE -ne 0) { throw "npm run build failed" }
   Write-Ok "Build finished"
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

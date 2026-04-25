@@ -48,4 +48,7 @@ Write-Ok "Patched AnalyticsMatrixRow type"
 Write-Host ""
 Write-Host "Now run:" -ForegroundColor Yellow
 Write-Host "  npm run build" -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

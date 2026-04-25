@@ -250,4 +250,7 @@ Write-Host "  - $structureFile" -ForegroundColor Green
 Write-Host "  - $codebaseFile" -ForegroundColor Green
 Write-Host "  - $contextFile" -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Cyan
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

@@ -1,6 +1,7 @@
 =========================================
 PROJECT STRUCTURE
 =========================================
+<<<<<<< HEAD
 Generated: 2026-04-25 06:24:09
 Project root: C:\Users\tarek\Downloads\f1-hackathon-dashboard_v2_RECREATED
 
@@ -22,11 +23,24 @@ Project root: C:\Users\tarek\Downloads\f1-hackathon-dashboard_v2_RECREATED
 .backup-header-gif-v0_38-20260424_194451
 .backup-header-gif-v0_39-20260424_194547
 .backup-newsbar-applicants-matched-anaccepted-v0_70-20260425_055407
+=======
+Generated: 2026-04-24 20:19:14
+Project root: C:\Users\tarek\Downloads\f1-hackathon-dashboard_v2
+
+[DIRECTORIES]
+.backup-before-clean
+.backup-card-gif-v0_40-20260424_195100
+.backup-final-stabilizer-v0_44-20260424_200407
+.backup-global-top12-v0_48-20260424_201745
+.backup-header-gif-v0_38-20260424_194451
+.backup-header-gif-v0_39-20260424_194547
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 .backup-podium-p2-gif-v0_41-20260424_195357
 .backup-podium-p2-gif-v0_43-20260424_195733
 .backup-podium-restore-wheels-v0_46-20260424_201046
 .backup-podium-split-gif-v0_45-20260424_200723
 .backup-podium-swap-v0_47-20260424_201325
+<<<<<<< HEAD
 .backup-real-api-all-tables-v0_61-20260425_054709
 .backup-real-api-all-tables-v0_63-20260425_054805
 .backup-remove-header-middle-gif-v0_53-20260425_042355
@@ -39,6 +53,9 @@ Project root: C:\Users\tarek\Downloads\f1-hackathon-dashboard_v2_RECREATED
 .backup-solid-table-headers-no-bleed-v0_55-20260425_054222
 .backup-table-row-size-visible-scroll-v0_57-20260425_054435
 .backup-tunisia-trackmap-start-arrival-v0_56-20260425_054254
+=======
+.backup-sketch-layout-v0_36-20260424_134806
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 public
 scripts
 src
@@ -58,6 +75,7 @@ src\lib
 .backup-before-clean\dashboard-f1.tsx
 .backup-before-clean\globals.css
 .backup-before-clean\page.tsx
+<<<<<<< HEAD
 .backup-bullaregia-exclude-virtual-global12-v0_69-20260425_055336\admin-api-page.tsx
 .backup-bullaregia-exclude-virtual-global12-v0_69-20260425_055336\dashboard-f1.tsx
 .backup-bullaregia-exclude-virtual-global12-v0_69-20260425_055336\globals.css
@@ -82,17 +100,29 @@ src\lib
 .backup-global-top12-v0_48-20260424_201745\globals.css
 .backup-header-checkered-flag-style-v0_58-20260425_054507\dashboard-f1.tsx
 .backup-header-checkered-flag-style-v0_58-20260425_054507\globals.css
+=======
+.backup-card-gif-v0_40-20260424_195100\globals.css
+.backup-final-stabilizer-v0_44-20260424_200407\aiesec-analytics-route.ts
+.backup-final-stabilizer-v0_44-20260424_200407\dashboard-f1.tsx
+.backup-final-stabilizer-v0_44-20260424_200407\globals.css
+.backup-global-top12-v0_48-20260424_201745\dashboard-f1.tsx
+.backup-global-top12-v0_48-20260424_201745\globals.css
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 .backup-header-gif-v0_38-20260424_194451\dashboard-f1.tsx
 .backup-header-gif-v0_38-20260424_194451\globals.css
 .backup-header-gif-v0_39-20260424_194547\dashboard-f1.tsx
 .backup-header-gif-v0_39-20260424_194547\globals.css
+<<<<<<< HEAD
 .backup-newsbar-applicants-matched-anaccepted-v0_70-20260425_055407\dashboard-f1.tsx
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 .backup-podium-p2-gif-v0_41-20260424_195357\globals.css
 .backup-podium-p2-gif-v0_43-20260424_195733\globals.css
 .backup-podium-restore-wheels-v0_46-20260424_201046\globals.css
 .backup-podium-split-gif-v0_45-20260424_200723\globals.css
 .backup-podium-swap-v0_47-20260424_201325\dashboard-f1.tsx
 .backup-podium-swap-v0_47-20260424_201325\globals.css
+<<<<<<< HEAD
 .backup-real-api-all-tables-v0_61-20260425_054709\dashboard-f1.tsx
 .backup-real-api-all-tables-v0_61-20260425_054709\globals.css
 .backup-real-api-all-tables-v0_63-20260425_054805\dashboard-f1.tsx
@@ -113,6 +143,10 @@ src\lib
 .backup-table-row-size-visible-scroll-v0_57-20260425_054435\globals.css
 .backup-tunisia-trackmap-start-arrival-v0_56-20260425_054254\dashboard-f1.tsx
 .backup-tunisia-trackmap-start-arrival-v0_56-20260425_054254\globals.css
+=======
+.backup-sketch-layout-v0_36-20260424_134806\dashboard-f1.tsx
+.backup-sketch-layout-v0_36-20260424_134806\globals.css
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 .env.local
 .env.local.example
 .gitignore
@@ -150,6 +184,7 @@ Dahsboard_F1_Style_Patch_v0_6.txt
 Dahsboard_F1_Style_Patch_v0_7.ps1
 Dahsboard_F1_Style_Patch_v0_8.ps1
 Dahsboard_F1_Style_Patch_v0_9.ps1
+<<<<<<< HEAD
 Dashboard_F1_Add_BullaRegia_ExcludeVirtual_Global12_v0_69.ps1
 Dashboard_F1_Blurred_GIF_Cards_Test_v0_40.ps1
 Dashboard_F1_Final_Safe_Table_Text_Fix_v0_52.ps1
@@ -186,6 +221,21 @@ Dashboard_F1_Solid_Table_Headers_No_Bleed_v0_55.ps1
 Dashboard_F1_SolidHeaders_Top12_AppliedTicker_v0_50.ps1
 Dashboard_F1_Table_RowSize_VisibleRows_Scroll_v0_57.ps1
 Dashboard_F1_Tunisia_TrackMap_Start_Arrival_v0_56.ps1
+=======
+Dashboard_F1_Blurred_GIF_Cards_Test_v0_40.ps1
+Dashboard_F1_Final_Stabilizer_NoErrors_v0_44.ps1
+Dashboard_F1_Force_Podium_P2_GIF_Blur_v0_42.ps1
+Dashboard_F1_Force_Podium_P2_GIF_Blur_v0_43.ps1
+Dashboard_F1_GlobalTable_Top12_NoResize_v0_48.ps1
+Dashboard_F1_Header_GIF_Center_v0_37.ps1
+Dashboard_F1_Header_GIF_Center_v0_38.ps1
+Dashboard_F1_Header_GIF_Center_v0_39.ps1
+Dashboard_F1_Podium_Card_Split_GIF_v0_45.ps1
+Dashboard_F1_Podium_P2_GIF_Blur_v0_41.ps1
+Dashboard_F1_Podium_Swap_Name_Place_v0_47.ps1
+Dashboard_F1_Restore_Podium_Wheels_v0_46.ps1
+Dashboard_F1_Sketch_Layout_NoScroll_v0_36.ps1
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 eslint.config.mjs
 Full_Project_Bundle_Generator.ps1
 next.config.ts
@@ -218,3 +268,7 @@ src\lib\dashboard-final-data.ts
 src\lib\dashboard-v2-data.ts
 src\lib\dashboard-v3-data.ts
 tsconfig.json
+<<<<<<< HEAD
+=======
+tsconfig.tsbuildinfo
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

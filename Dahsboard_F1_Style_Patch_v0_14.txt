@@ -113,7 +113,11 @@ export default function DashboardF1() {
         <header className="tv-header">
           <div className="tv-header-left">
             <div className="tv-brand">
+<<<<<<< HEAD
               <span className="tv-brand-icon">ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â</span>
+=======
+              <span className="tv-brand-icon">ðŸ</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               <span className="tv-brand-text">AIESEC</span>
               <span className="tv-brand-accent">RACE CONTROL</span>
             </div>
@@ -123,7 +127,11 @@ export default function DashboardF1() {
             </div>
           </div>
           <div className="tv-header-center">
+<<<<<<< HEAD
             <div className="tv-session-info">GRAND PRIX 2026 ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ LEADERBOARD</div>
+=======
+            <div className="tv-session-info">GRAND PRIX 2026 â€¢ LEADERBOARD</div>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <div className="tv-track-map">IMMERSIVE TRACKER v2.0</div>
           </div>
           <div className="tv-header-right">
@@ -207,11 +215,19 @@ export default function DashboardF1() {
         {/* BOTTOM TIER: Immersive Ticker & Race Control */}
         <div className="tv-bottom-bar">
           <div className="tv-ticker-wrap">
+<<<<<<< HEAD
             <div className="tv-ticker-label">ÃƒÂ¢Ã‚ÂÃ‚Â±ÃƒÂ¯Ã‚Â¸Ã‚Â LIVE TIMING</div>
             <div className="tv-ticker-track">
               <div className="tv-ticker-content">
                 {leaderboard.map(t => `${t.rank}. ${t.rowLabel} (${t.approvedTotal})`).join("   ÃƒÂ¢Ã¢â‚¬â€Ã¢â‚¬Â    ")}
                 {leaderboard.map(t => `${t.rank}. ${t.rowLabel} (${t.approvedTotal})`).join("   ÃƒÂ¢Ã¢â‚¬â€Ã¢â‚¬Â    ")}
+=======
+            <div className="tv-ticker-label">â±ï¸ LIVE TIMING</div>
+            <div className="tv-ticker-track">
+              <div className="tv-ticker-content">
+                {leaderboard.map(t => `${t.rank}. ${t.rowLabel} (${t.approvedTotal})`).join("   â—†   ")}
+                {leaderboard.map(t => `${t.rank}. ${t.rowLabel} (${t.approvedTotal})`).join("   â—†   ")}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               </div>
             </div>
           </div>
@@ -667,6 +683,7 @@ Write-Ok "Global CSS replaced with no-scroll, immersive F1 TV theme."
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Green
+<<<<<<< HEAD
 Write-Host "ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ UI REDESIGN COMPLETE" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
 Write-Host ""
@@ -679,6 +696,20 @@ Write-Host "  ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Professional race control ticker 
 Write-Host "  ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ Vibrant red accents, perfect density, no empty spaces" -ForegroundColor White
 Write-Host ""
 Write-Host "ÃƒÂ°Ã…Â¸Ã…Â¡Ã¢â€šÂ¬ TO APPLY:" -ForegroundColor Yellow
+=======
+Write-Host "âœ… UI REDESIGN COMPLETE" -ForegroundColor Green
+Write-Host "========================================" -ForegroundColor Green
+Write-Host ""
+Write-Host "ðŸŽ¯ FEATURES:" -ForegroundColor Cyan
+Write-Host "  â€¢ Absolutely NO SCROLL (Vertical/Horizontal) - Full viewport fit" -ForegroundColor White
+Write-Host "  â€¢ F1 TV Broadcast Style with scanlines, vignette & glowing effects" -ForegroundColor White
+Write-Host "  â€¢ Immersive Carbon Fiber background with dynamic racing gradient" -ForegroundColor White
+Write-Host "  â€¢ All tables are fully visible within their containers (no cropping)" -ForegroundColor White
+Write-Host "  â€¢ Professional race control ticker at bottom" -ForegroundColor White
+Write-Host "  â€¢ Vibrant red accents, perfect density, no empty spaces" -ForegroundColor White
+Write-Host ""
+Write-Host "ðŸš€ TO APPLY:" -ForegroundColor Yellow
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 Write-Host "  1. Restart your dev server (npm run dev)" -ForegroundColor White
 Write-Host "  2. Clear browser cache and refresh" -ForegroundColor White
 Write-Host "  3. Enjoy the full F1 TV experience!" -ForegroundColor White
@@ -686,4 +717,7 @@ Write-Host ""
 Write-Host "========================================" -ForegroundColor Green
 Write-Host "DESIGNED FOR OPERATIONAL IMMERSION" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

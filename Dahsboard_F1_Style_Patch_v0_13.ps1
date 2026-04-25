@@ -171,7 +171,11 @@ export default function DashboardF1() {
   const tickerText = useMemo(() => {
     return leaderboard
       .map((row) => `${row.rank}. ${compactLabel(row.rowLabel)} ${row.approvedTotal}`)
+<<<<<<< HEAD
       .join("   ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢   ");
+=======
+      .join("   â€¢   ");
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   }, [leaderboard]);
 
   const clockText = useMemo(() => {
@@ -629,4 +633,7 @@ Write-Host "  3. Refresh /" -ForegroundColor White
 Write-Host ""
 Write-Host "Note:" -ForegroundColor Yellow
 Write-Host "  If /api/aiesec-analytics still returns 502, the dashboard will show fallback data instead of breaking." -ForegroundColor White
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

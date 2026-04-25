@@ -64,4 +64,7 @@ export const alerts: Alert[] = [
   { id: "record", title: "TRACK RECORD", body: "New lap record set by Red Bull Racing", tone: "success" },
   { id: "pit", title: "PIT WINDOW", body: "Pit window opens in 5 minutes", tone: "warning" },
 ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

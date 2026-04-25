@@ -210,4 +210,7 @@ Write-Host "Usage examples:" -ForegroundColor Yellow
 Write-Host "  powershell -ExecutionPolicy Bypass -File .\Dashboard_F1_Header_GIF_Center_v0_37.ps1 -GifPath 'C:\Users\tarek\Downloads\my.gif' -RunBuild" -ForegroundColor White
 Write-Host "  powershell -ExecutionPolicy Bypass -File .\Dashboard_F1_Header_GIF_Center_v0_37.ps1 -RunBuild" -ForegroundColor White
 Write-Host ""
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

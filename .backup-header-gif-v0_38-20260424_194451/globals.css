@@ -4666,4 +4666,8 @@ body {
   .sketch-podium-card { grid-template-columns: 1fr; min-height: 300px; }
   .sketch-podium-stage { grid-template-columns: 1fr; }
   .sketch-news-bar { grid-template-columns: 120px 1fr; }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

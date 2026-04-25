@@ -174,7 +174,11 @@ function ProductTable({ config, rows }: { config: ProductBoard; rows: BoardRow[]
       <div className="sketch-card-head sketch-mini-head">
         <div>
           <h3>{config.title}</h3>
+<<<<<<< HEAD
           <p>Top {Math.min(topRows.length, 12)} Ãƒâ€šÃ‚Â· {config.subtitle}</p>
+=======
+          <p>Top {Math.min(topRows.length, 12)} Â· {config.subtitle}</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </div>
         <div className="sketch-product-tag">TOP 12</div>
       </div>
@@ -329,7 +333,11 @@ export default function DashboardF1() {
 
   const timeText = now ? now.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", second: "2-digit" }) : "--:--:--";
   const dateText = now ? now.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }) : "-- --- ----";
+<<<<<<< HEAD
   const rangeText = payload?.requested?.startDate && payload?.requested?.endDate ? `${payload.requested.startDate} ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ ${payload.requested.endDate}` : "Live range";
+=======
+  const rangeText = payload?.requested?.startDate && payload?.requested?.endDate ? `${payload.requested.startDate} ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ ${payload.requested.endDate}` : "Live range";
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
   const appliedRanking = useMemo(() => {
     return [...rows]
@@ -340,7 +348,11 @@ export default function DashboardF1() {
       )
       .slice(0, 12)
       .map((row, index) => `${row.shortLabel}: ${index + 1}`)
+<<<<<<< HEAD
       .join(" Ãƒâ€šÃ‚Â· ");
+=======
+      .join(" Â· ");
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   }, [rows]);
   return (
     <main className="sketch-race-page">
@@ -352,7 +364,11 @@ export default function DashboardF1() {
           <div className="sketch-brand">
             <div className="sketch-kicker">AIESEC FORMULA ANALYTICS</div>
             <h1>Race Control Dashboard</h1>
+<<<<<<< HEAD
             <p>Symmetric F1 broadcast layout ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· no-scroll tables ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· approval performance</p>
+=======
+            <p>Symmetric F1 broadcast layout ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· no-scroll tables ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· approval performance</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
           <div className="sketch-header-metrics">
             <div className="sketch-metric"><span>Applied</span><strong>{globalApplied}</strong></div>
@@ -367,14 +383,22 @@ export default function DashboardF1() {
           </div>
         </header>
 
+<<<<<<< HEAD
         {error ? <div className="sketch-alert"><WifiOff size={14} /> {error} ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· showing safe local fallback if needed</div> : null}
+=======
+        {error ? <div className="sketch-alert"><WifiOff size={14} /> {error} ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· showing safe local fallback if needed</div> : null}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 
         <section className="sketch-main-grid">
           <section className="sketch-card sketch-global-card">
             <div className="sketch-card-head">
               <div>
                 <h2>Global Approval Table</h2>
+<<<<<<< HEAD
                 <p>{loading ? "Loading live data..." : `Top ${Math.min(rows.length, 12)} entities ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· ${rangeText}`}</p>
+=======
+                <p>{loading ? "Loading live data..." : `Top ${Math.min(rows.length, 12)} entities ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· ${rangeText}`}</p>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
               </div>
               <div className="sketch-live-pill">{error ? <WifiOff size={13} /> : <Wifi size={13} />} LIVE</div>
             </div>
@@ -393,11 +417,18 @@ export default function DashboardF1() {
         <footer className="sketch-news-bar sketch-applied-news-bar">
           <div className="sketch-news-label"><Radio size={14} /> APPLIED</div>
           <div className="sketch-news-track">
+<<<<<<< HEAD
             <span>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â Applied values ranking Ãƒâ€šÃ‚Â· {appliedRanking || "No applied ranking yet"} Ãƒâ€šÃ‚Â·</span>
+=======
+            <span>ðŸ Applied values ranking Â· {appliedRanking || "No applied ranking yet"} Â·</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
         </footer>
       </div>
     </main>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

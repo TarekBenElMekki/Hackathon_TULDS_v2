@@ -210,4 +210,7 @@ Write-Host "GIF path in app: /f1-header-gif.gif" -ForegroundColor White
 Write-Host "Placement: centered inside the header" -ForegroundColor White
 Write-Host "Sizing: object-fit contain, keeps proportions" -ForegroundColor White
 Write-Host ""
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

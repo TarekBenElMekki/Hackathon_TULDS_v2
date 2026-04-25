@@ -847,9 +847,15 @@ export default function DashboardF1() {
   const clock = useMemo(() => formatClock(timeLeft), [timeLeft]);
 
   const getCarIcon = (position: number): string => {
+<<<<<<< HEAD
     if (position > 90) return "ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚ÂÃƒÂ°Ã…Â¸Ã‚ÂÃ…Â½ÃƒÂ¯Ã‚Â¸Ã‚Â";
     if (position > 70) return "ÃƒÂ°Ã…Â¸Ã‚ÂÃ…Â½ÃƒÂ¯Ã‚Â¸Ã‚ÂÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â¨";
     return "ÃƒÂ°Ã…Â¸Ã‚ÂÃ…Â½ÃƒÂ¯Ã‚Â¸Ã‚Â";
+=======
+    if (position > 90) return "ðŸðŸŽï¸";
+    if (position > 70) return "ðŸŽï¸ðŸ’¨";
+    return "ðŸŽï¸";
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
   };
 
   const getPositionChangeClass = (teamCode: string, currentRank: number): string => {
@@ -863,8 +869,13 @@ export default function DashboardF1() {
   const getPositionChangeIcon = (teamCode: string, currentRank: number): string | null => {
     const lastRank = lastPositions[teamCode];
     if (!lastRank) return null;
+<<<<<<< HEAD
     if (currentRank < lastRank) return "ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ";
     if (currentRank > lastRank) return "ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“";
+=======
+    if (currentRank < lastRank) return "â†‘";
+    if (currentRank > lastRank) return "â†“";
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
     return null;
   };
 
@@ -894,7 +905,11 @@ export default function DashboardF1() {
       <AnimatePresence>
         {radioMessage && (
           <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -100, opacity: 0 }} className="radio-message">
+<<<<<<< HEAD
             <div className="radio-crackle">ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â» TEAM RADIO</div>
+=======
+            <div className="radio-crackle">ðŸ“» TEAM RADIO</div>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <div className="radio-text">"{radioMessage}"</div>
           </motion.div>
         )}
@@ -911,7 +926,11 @@ export default function DashboardF1() {
           <div className="logo-area">
             <div className="f1-logo">F1<span>HACK</span></div>
             <div className="event-name">GRAND PRIX TRACKER 2026</div>
+<<<<<<< HEAD
             {isPWA && <span style={{ fontSize: "8px", color: "#00D26A" }}>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â± INSTALLED</span>}
+=======
+            {isPWA && <span style={{ fontSize: "8px", color: "#00D26A" }}>ðŸ“± INSTALLED</span>}
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
           <div className="timer-area">
             <div className="timer-label">RACE DURATION</div>
@@ -940,7 +959,11 @@ export default function DashboardF1() {
                     whileHover={{ x: 5 }}
                   >
                     <div className="driver-color-bar" style={{ background: team.color }}></div>
+<<<<<<< HEAD
                     <div className="driver-pos">{team.rank}{posChangeIcon && <span className={posChangeIcon === "ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ" ? "pos-change-up" : "pos-change-down"}>{posChangeIcon}</span>}</div>
+=======
+                    <div className="driver-pos">{team.rank}{posChangeIcon && <span className={posChangeIcon === "â†‘" ? "pos-change-up" : "pos-change-down"}>{posChangeIcon}</span>}</div>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
                     <div className="driver-info">
                       <div className="driver-name">{team.driver}</div>
                       <div className="driver-team-name">{team.name}</div>
@@ -980,7 +1003,11 @@ export default function DashboardF1() {
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: idx * 0.05 }}
                         >
+<<<<<<< HEAD
                           <td className="position">{team.rank}{posChangeIcon && <span className={posChangeIcon === "ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ" ? "pos-change-up" : "pos-change-down"}>{posChangeIcon}</span>}</td>
+=======
+                          <td className="position">{team.rank}{posChangeIcon && <span className={posChangeIcon === "â†‘" ? "pos-change-up" : "pos-change-down"}>{posChangeIcon}</span>}</td>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
                           <td><div className="team-badge"><div className="team-color" style={{ background: team.color }}></div><span className="team-code">{team.code}</span><span className="team-name">{team.name}</span></div></td>
                           <td>{team.driver}</td>
                           <td className="points">{team.points}</td>
@@ -1024,7 +1051,11 @@ export default function DashboardF1() {
           </div>
           
           <div className="goal-tracker">
+<<<<<<< HEAD
             <div className="goal-header"><h3>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â RACE PROGRESS</h3></div>
+=======
+            <div className="goal-header"><h3>ðŸ RACE PROGRESS</h3></div>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <div className="race-track">
               {teams.map((team) => {
                 const progress = carPositions[team.code] || (team.progress || 55);
@@ -1055,24 +1086,43 @@ export default function DashboardF1() {
         </div>
         
         <footer className="f1-footer">
+<<<<<<< HEAD
           <div>Ãƒâ€šÃ‚Â© 2026 F1 Hackathon Championship | Live Timing | 11 Teams</div>
           <div className="footer-message">
             <span>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â Grand Prix</span>
             <span>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  Real-time Updates</span>
             <span>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¯ Live Positions</span>
             <span>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬ {highlights.length} Highlights</span>
+=======
+          <div>Â© 2026 F1 Hackathon Championship | Live Timing | 11 Teams</div>
+          <div className="footer-message">
+            <span>ðŸ Grand Prix</span>
+            <span>ðŸ“Š Real-time Updates</span>
+            <span>ðŸŽ¯ Live Positions</span>
+            <span>ðŸŽ¬ {highlights.length} Highlights</span>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </div>
         </footer>
       </div>
       
+<<<<<<< HEAD
       <button className="highlight-reel" onClick={() => setShowReplay(true)}>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬ HIGHLIGHT REEL</button>
       <button className="admin-button" onClick={() => router.push("/admin")}>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â® RACE CONTROL</button>
+=======
+      <button className="highlight-reel" onClick={() => setShowReplay(true)}>ðŸŽ¬ HIGHLIGHT REEL</button>
+      <button className="admin-button" onClick={() => router.push("/admin")}>ðŸŽ® RACE CONTROL</button>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
       
       {showReplay && (
         <div className="replay-modal" onClick={() => setShowReplay(false)}>
           <div className="replay-content" onClick={(e) => e.stopPropagation()}>
+<<<<<<< HEAD
             <h2 style={{ color: "#E10600", marginBottom: "16px" }}>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬ HIGHLIGHT REEL</h2>
             <button onClick={exportHighlights} style={{ background: "#E10600", color: "white", border: "none", padding: "8px 16px", borderRadius: "4px", cursor: "pointer", marginBottom: "16px" }}>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â¥ Export Highlights</button>
+=======
+            <h2 style={{ color: "#E10600", marginBottom: "16px" }}>ðŸŽ¬ HIGHLIGHT REEL</h2>
+            <button onClick={exportHighlights} style={{ background: "#E10600", color: "white", border: "none", padding: "8px 16px", borderRadius: "4px", cursor: "pointer", marginBottom: "16px" }}>ðŸ“¥ Export Highlights</button>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             {highlights.length === 0 && <p style={{ color: "#C0C0C0" }}>No highlights yet. Race events will appear here!</p>}
             {highlights.map((highlight) => (
               <div key={highlight.id} className="replay-item">
@@ -1151,11 +1201,16 @@ export default function AdminPage() {
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0A0A0E 0%, #15151E 100%)", padding: "20px", fontFamily: "'Titillium Web', sans-serif" }}>
       {showPreview && (
         <div style={{ position: "fixed", top: "20px", right: "20px", background: "linear-gradient(135deg, #E10600, #8B0000)", padding: "15px 25px", borderRadius: "8px", color: "white", zIndex: 1000 }}>
+<<<<<<< HEAD
           ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ Command sent to dashboard!
+=======
+          âœ“ Command sent to dashboard!
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </div>
       )}
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "30px", padding: "20px", background: "rgba(225,6,0,0.1)", borderBottom: "3px solid #E10600", borderRadius: "8px" }}>
+<<<<<<< HEAD
           <div><h1 style={{ color: "#E10600", fontSize: "28px", margin: 0 }}>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â® RACE CONTROL</h1><p style={{ color: "#C0C0C0", margin: "5px 0 0" }}>Admin Dashboard | Live Race Management</p></div>
           <button onClick={() => router.push("/")} style={{ background: "rgba(255,255,255,0.1)", border: "1px solid #E10600", color: "white", padding: "10px 20px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>ÃƒÂ¢Ã¢â‚¬Â Ã‚Â BACK TO DASHBOARD</button>
         </div>
@@ -1167,10 +1222,24 @@ export default function AdminPage() {
           </div>
           <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
             <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â» TEAM RADIO</h3>
+=======
+          <div><h1 style={{ color: "#E10600", fontSize: "28px", margin: 0 }}>ðŸŽ® RACE CONTROL</h1><p style={{ color: "#C0C0C0", margin: "5px 0 0" }}>Admin Dashboard | Live Race Management</p></div>
+          <button onClick={() => router.push("/")} style={{ background: "rgba(255,255,255,0.1)", border: "1px solid #E10600", color: "white", padding: "10px 20px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>â† BACK TO DASHBOARD</button>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
+          <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸ’¬ MESSAGE CONTROL</h3>
+            <input type="text" value={messageInput} onChange={(e) => setMessageInput(e.target.value)} placeholder="Enter race message..." style={{ width: "100%", padding: "10px", marginBottom: "10px", background: "#1E1E28", border: "1px solid #38383F", color: "white", borderRadius: "5px" }} />
+            <button onClick={pushMessage} style={{ width: "100%", background: "linear-gradient(135deg, #E10600, #8B0000)", border: "none", color: "white", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>ðŸ“¢ PUSH TO DASHBOARD</button>
+          </div>
+          <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸ“» TEAM RADIO</h3>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <input type="text" value={radioMessageInput} onChange={(e) => setRadioMessageInput(e.target.value)} placeholder="Enter radio message..." style={{ width: "100%", padding: "10px", marginBottom: "10px", background: "#1E1E28", border: "1px solid #38383F", color: "white", borderRadius: "5px" }} />
             <select value={selectedTeam} onChange={(e) => setSelectedTeam(e.target.value)} style={{ width: "100%", padding: "10px", marginBottom: "10px", background: "#1E1E28", border: "1px solid #38383F", color: "white", borderRadius: "5px" }}>
               {teams.map((team: any) => (<option key={team.code} value={team.code}>{team.name} ({team.code})</option>))}
             </select>
+<<<<<<< HEAD
             <button onClick={pushTeamRadio} style={{ width: "100%", background: "linear-gradient(135deg, #E10600, #8B0000)", border: "none", color: "white", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>ÃƒÂ°Ã…Â¸Ã…Â½Ã¢â€žÂ¢ÃƒÂ¯Ã‚Â¸Ã‚Â SEND RADIO</button>
           </div>
           <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
@@ -1179,10 +1248,21 @@ export default function AdminPage() {
           </div>
           <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
             <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  POINTS CONTROL</h3>
+=======
+            <button onClick={pushTeamRadio} style={{ width: "100%", background: "linear-gradient(135deg, #E10600, #8B0000)", border: "none", color: "white", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>ðŸŽ™ï¸ SEND RADIO</button>
+          </div>
+          <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸŽ¥ VISUAL EFFECTS</h3>
+            <button onClick={showGif} style={{ width: "100%", background: "linear-gradient(135deg, #E10600, #8B0000)", border: "none", color: "white", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>ðŸŽ¬ SHOW RANDOM GIF</button>
+          </div>
+          <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸ“Š POINTS CONTROL</h3>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <select value={selectedTeam} onChange={(e) => setSelectedTeam(e.target.value)} style={{ width: "100%", padding: "10px", marginBottom: "10px", background: "#1E1E28", border: "1px solid #38383F", color: "white", borderRadius: "5px" }}>
               {teams.map((team: any) => (<option key={team.code} value={team.code}>{team.name} ({team.code})</option>))}
             </select>
             <input type="number" value={pointsToAdd} onChange={(e) => setPointsToAdd(Number(e.target.value))} style={{ width: "100%", padding: "10px", marginBottom: "10px", background: "#1E1E28", border: "1px solid #38383F", color: "white", borderRadius: "5px" }} />
+<<<<<<< HEAD
             <button onClick={updatePoints} style={{ width: "100%", background: "linear-gradient(135deg, #E10600, #8B0000)", border: "none", color: "white", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>ÃƒÂ¢Ã…Â¾Ã¢â‚¬Â¢ ADD POINTS</button>
           </div>
           <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
@@ -1202,6 +1282,27 @@ export default function AdminPage() {
             <li>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â Safety Car, Fastest Lap, and Pit Stop triggers create race events</li>
             <li>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â» Team Radio sends crackling radio messages with sound effects</li>
             <li>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬ Highlight Reel automatically captures all major race events</li>
+=======
+            <button onClick={updatePoints} style={{ width: "100%", background: "linear-gradient(135deg, #E10600, #8B0000)", border: "none", color: "white", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold" }}>âž• ADD POINTS</button>
+          </div>
+          <div style={{ background: "rgba(30,30,40,0.95)", border: "1px solid rgba(225,6,0,0.3)", borderRadius: "8px", padding: "20px" }}>
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸ RACE EVENTS</h3>
+            <button onClick={triggerSafetyCar} style={{ width: "100%", background: "#FFD700", color: "#000", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold", border: "none", marginBottom: "10px" }}>ðŸš¨ DEPLOY SAFETY CAR</button>
+            <button onClick={triggerFastestLap} style={{ width: "100%", background: "#00D26A", color: "#000", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold", border: "none", marginBottom: "10px" }}>âš¡ FASTEST LAP</button>
+            <button onClick={triggerPitStop} style={{ width: "100%", background: "#FF6B35", color: "#000", padding: "12px", borderRadius: "5px", cursor: "pointer", fontWeight: "bold", border: "none" }}>ðŸ›ž PIT STOP</button>
+          </div>
+        </div>
+        <div style={{ marginTop: "30px", padding: "20px", background: "rgba(0,0,0,0.5)", borderRadius: "8px", border: "1px solid rgba(225,6,0,0.2)" }}>
+          <h4 style={{ color: "#E10600", marginBottom: "10px" }}>ðŸ“‹ INSTRUCTIONS</h4>
+          <ul style={{ color: "#C0C0C0", fontSize: "12px", lineHeight: "1.8" }}>
+            <li>ðŸŽ® All controls send real-time commands to the main dashboard</li>
+            <li>ðŸ’¬ Messages appear as overlays on the main screen</li>
+            <li>ðŸŽ¥ GIFs create dramatic visual effects during key moments</li>
+            <li>ðŸ“Š Points can be awarded to specific teams in real-time</li>
+            <li>ðŸ Safety Car, Fastest Lap, and Pit Stop triggers create race events</li>
+            <li>ðŸ“» Team Radio sends crackling radio messages with sound effects</li>
+            <li>ðŸŽ¬ Highlight Reel automatically captures all major race events</li>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </ul>
         </div>
       </div>
@@ -1342,6 +1443,7 @@ Write-Host "UPGRADE COMPLETE!" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
 Write-Host ""
 Write-Host "FEATURES ADDED:" -ForegroundColor Cyan
+<<<<<<< HEAD
 Write-Host "  ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Sound Effects Engine (engine start, overtake, pit stop, fastest lap)" -ForegroundColor White
 Write-Host "  ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Driver Radio Messages with crackle effect" -ForegroundColor White
 Write-Host "  ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Live Timing Tower with interval gaps" -ForegroundColor White
@@ -1352,6 +1454,18 @@ Write-Host "  ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ F1 TV Style Broadcast Graphics
 Write-Host "  ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Kiosk Mode (auto-hide cursor after 5 seconds)" -ForegroundColor White
 Write-Host "  ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ PWA Support (installable on tablets/mobile)" -ForegroundColor White
 Write-Host "  ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Performance Optimizations (virtualized animations)" -ForegroundColor White
+=======
+Write-Host "  âœ… Sound Effects Engine (engine start, overtake, pit stop, fastest lap)" -ForegroundColor White
+Write-Host "  âœ… Driver Radio Messages with crackle effect" -ForegroundColor White
+Write-Host "  âœ… Live Timing Tower with interval gaps" -ForegroundColor White
+Write-Host "  âœ… Position Change Animations (up/down indicators)" -ForegroundColor White
+Write-Host "  âœ… Overtake Detection with visual/audio feedback" -ForegroundColor White
+Write-Host "  âœ… Highlight Reel with auto-capture of race events" -ForegroundColor White
+Write-Host "  âœ… F1 TV Style Broadcast Graphics" -ForegroundColor White
+Write-Host "  âœ… Kiosk Mode (auto-hide cursor after 5 seconds)" -ForegroundColor White
+Write-Host "  âœ… PWA Support (installable on tablets/mobile)" -ForegroundColor White
+Write-Host "  âœ… Performance Optimizations (virtualized animations)" -ForegroundColor White
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
 Write-Host ""
 Write-Host "TO START:" -ForegroundColor Yellow
 Write-Host "  npm run dev" -ForegroundColor White
@@ -1363,4 +1477,7 @@ Write-Host ""
 Write-Host "========================================" -ForegroundColor Green
 
 Write-Info "Done! Run npm run dev to start your enhanced F1 dashboard"
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba

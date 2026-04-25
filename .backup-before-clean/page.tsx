@@ -67,7 +67,11 @@ export default function AdminPage() {
           color: "white",
           zIndex: 1000
         }}>
+<<<<<<< HEAD
           ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ Command sent to dashboard!
+=======
+          âœ“ Command sent to dashboard!
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
         </div>
       )}
 
@@ -83,7 +87,11 @@ export default function AdminPage() {
           borderRadius: "8px"
         }}>
           <div>
+<<<<<<< HEAD
             <h1 style={{ color: "#E10600", fontSize: "28px", margin: 0 }}>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â® RACE CONTROL</h1>
+=======
+            <h1 style={{ color: "#E10600", fontSize: "28px", margin: 0 }}>ðŸŽ® RACE CONTROL</h1>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <p style={{ color: "#C0C0C0", margin: "5px 0 0" }}>Admin Dashboard | Live Race Management</p>
           </div>
           <button
@@ -98,7 +106,11 @@ export default function AdminPage() {
               fontWeight: "bold"
             }}
           >
+<<<<<<< HEAD
             ÃƒÂ¢Ã¢â‚¬Â Ã‚Â BACK TO DASHBOARD
+=======
+            â† BACK TO DASHBOARD
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </button>
         </div>
 
@@ -114,7 +126,11 @@ export default function AdminPage() {
             borderRadius: "8px",
             padding: "20px"
           }}>
+<<<<<<< HEAD
             <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â¬ MESSAGE CONTROL</h3>
+=======
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸ’¬ MESSAGE CONTROL</h3>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <input
               type="text"
               value={messageInput}
@@ -143,7 +159,11 @@ export default function AdminPage() {
                 fontWeight: "bold"
               }}
             >
+<<<<<<< HEAD
               ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â¢ PUSH TO DASHBOARD
+=======
+              ðŸ“¢ PUSH TO DASHBOARD
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             </button>
           </div>
 
@@ -154,7 +174,11 @@ export default function AdminPage() {
             borderRadius: "8px",
             padding: "20px"
           }}>
+<<<<<<< HEAD
             <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¥ VISUAL EFFECTS</h3>
+=======
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸŽ¥ VISUAL EFFECTS</h3>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <button
               onClick={showGif}
               style={{
@@ -168,7 +192,11 @@ export default function AdminPage() {
                 fontWeight: "bold"
               }}
             >
+<<<<<<< HEAD
               ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬ SHOW RANDOM GIF
+=======
+              ðŸŽ¬ SHOW RANDOM GIF
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             </button>
           </div>
 
@@ -179,7 +207,11 @@ export default function AdminPage() {
             borderRadius: "8px",
             padding: "20px"
           }}>
+<<<<<<< HEAD
             <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  POINTS CONTROL</h3>
+=======
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸ“Š POINTS CONTROL</h3>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <select
               value={selectedTeam}
               onChange={(e) => setSelectedTeam(e.target.value)}
@@ -224,7 +256,11 @@ export default function AdminPage() {
                 fontWeight: "bold"
               }}
             >
+<<<<<<< HEAD
               ÃƒÂ¢Ã…Â¾Ã¢â‚¬Â¢ ADD POINTS
+=======
+              âž• ADD POINTS
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             </button>
           </div>
 
@@ -235,7 +271,11 @@ export default function AdminPage() {
             borderRadius: "8px",
             padding: "20px"
           }}>
+<<<<<<< HEAD
             <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â RACE EVENTS</h3>
+=======
+            <h3 style={{ color: "#E10600", marginBottom: "15px" }}>ðŸ RACE EVENTS</h3>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             <button
               onClick={triggerSafetyCar}
               style={{
@@ -250,7 +290,11 @@ export default function AdminPage() {
                 marginBottom: "10px"
               }}
             >
+<<<<<<< HEAD
               ÃƒÂ°Ã…Â¸Ã…Â¡Ã‚Â¨ DEPLOY SAFETY CAR
+=======
+              ðŸš¨ DEPLOY SAFETY CAR
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             </button>
             <button
               onClick={triggerFastestLap}
@@ -265,7 +309,11 @@ export default function AdminPage() {
                 border: "none"
               }}
             >
+<<<<<<< HEAD
               ÃƒÂ¢Ã…Â¡Ã‚Â¡ FASTEST LAP
+=======
+              âš¡ FASTEST LAP
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
             </button>
           </div>
         </div>
@@ -277,6 +325,7 @@ export default function AdminPage() {
           borderRadius: "8px",
           border: "1px solid rgba(225,6,0,0.2)"
         }}>
+<<<<<<< HEAD
           <h4 style={{ color: "#E10600", marginBottom: "10px" }}>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Â¹ INSTRUCTIONS</h4>
           <ul style={{ color: "#C0C0C0", fontSize: "12px", lineHeight: "1.8" }}>
             <li>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â® All controls send real-time commands to the main dashboard</li>
@@ -284,10 +333,22 @@ export default function AdminPage() {
             <li>ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¥ GIFs create dramatic visual effects during key moments</li>
             <li>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  Points can be awarded to specific teams in real-time</li>
             <li>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â Safety Car and Fastest Lap triggers create race events</li>
+=======
+          <h4 style={{ color: "#E10600", marginBottom: "10px" }}>ðŸ“‹ INSTRUCTIONS</h4>
+          <ul style={{ color: "#C0C0C0", fontSize: "12px", lineHeight: "1.8" }}>
+            <li>ðŸŽ® All controls send real-time commands to the main dashboard</li>
+            <li>ðŸ’¬ Messages appear as overlays on the main screen</li>
+            <li>ðŸŽ¥ GIFs create dramatic visual effects during key moments</li>
+            <li>ðŸ“Š Points can be awarded to specific teams in real-time</li>
+            <li>ðŸ Safety Car and Fastest Lap triggers create race events</li>
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
           </ul>
         </div>
       </div>
     </div>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b40135fb7f8bc52b4cde0691937b34a19f8ce3ba
